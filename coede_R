@@ -1,0 +1,512 @@
+hist(melanoma$sex)
+hist(melanoma$age)
+hist(melanoma$year)
+hist(melanoma$thickness)
+hist(melanoma$ulcer)
+hist(melanoma$...1)
+cor(time,melanoma,method = "pearson")
+cor(time,thickness,method = "pearson")
+cor(time, thickness, method = "pearson")
+attach(melanoma)
+cor(time, thickness, method = "pearson")
+cor(time, age, method = "pearson")
+cor(thickness, age, method = "pearson")
+linReg <- lm(time ~ thickness)
+LinReg <-lm(time ~ thickness)
+plot(time, thickness, main="Scatterplot")
+LinReg <- lm(time, age)
+LinReg <-lm(time ~ age)
+plot(time, age, main="Scatterplot")
+LinReg <- lm(thickness ~ age)
+plot(thickness, age, main="Scatterplot")
+age_t_test <- t.test(age ~sex, data = melanoma)
+age_t_test
+# QQ plots library(ggplot2)
+#Function to create QQ-plot qqplot_function<-function(data,variable,grouping_var,title){ggplot(data,aes(sample = !!sym(grouping_var)))+geom_qq() + labs(title = title,X="Theoretical)}
+time-
+View(melanoma)
+time_t_test <-t.test(time ~ sex, data = melanoma)
+time_t_test
+thickness_t_test <-t.test(thickness ~ sex, data = melanoma)
+thickness_t_test
+# QQ plots library(ggplot2)
+#Function to create QQ-plot qqplot_function <-function(data,variable,grouping_var,title) {}
+# QQ plots library(ggplot2)
+#Function to create QQ-plot qqplot_function <-function(data,variable,grouping_var,title){ggplot(data,aes(sample = !!sym(grouping_var))) + geom_qq_line() + geom_qq() + labs(title = title,x = "Theorwetical Quantiles",y = "Sample Quantiles") + theme_minimal()}
+#Function to create QQ-plot qqplot_function <-function(data,variable,grouping_var,title){ggplot(data,aes(sample = !!sym(grouping_var))) + geom_qq_line() + geom_qq() + labs(title = title,x = "Theorwetical Quantiles",y = "Sample Quantiles") + theme_minimal()}
+#QQ-plots for age grouped by gender qqplots_function(melanoma,"age","sex","QQ-plots for Age")
+# QQ-plots for thickness grouped by gender qqplots_function(melanoma,"thickness","sex","QQ-Plot for Thickness")
+#QQ-plot for time grouped by gender qqplot_function(melanoma,"time","sex","QQ-Plot for Time")
+#QQ-Plot for age grouped by gender qqplot_function(melanoma,"age","sex","QQ-Plots for age")
+QQ-Plot for age grouped by gender qqplot_function(melanoma."age","sex","QQ-Plot for Time")
+QQ-Plot for age grouped by gender qqplot_function(melanoma,"age","sex","QQ-Plot For Age")
+#QQ-plot for age grouped by gender
+#QQ-Plots for age
+#QQ-Plots for age grouped by gender
+qqplot_function(melanoma,"age","sex","QQ-Plots For Age")
+#QQ PLOTS
+library(ggplot2)
+#Function to create QQ-Plot
+qqplot_function <-function(data,variable,grouping_var,title){
+ggplot(data,aes(sample=!!sym(variable),color=factor(!!sym(grouping_var))))
+geom_qq_line()
+labs(title = title,x="Theoratical Quantiles",y="Sample Quantiles")
+theme_minimal()}
+#QQ-Plot for age grouped by gender
+qqplot_function(melanoma,"age","sex","QQ-Plot for age")
+library(readr)
+melanoma <- read_csv("shumaila liaqat/Stats for AI and Data Science/melanoma.csv")
+View(melanoma)
+#QQ plots
+library(ggplot2)
+#Function to create QQ-plot
+qqplot_function <-function(data,variable,grouping_var,title){
+#Function to create QQ-plot
+qqplot_function <-function(data,variable,grouping_var,title){}
+library(ggplot2)
+head(melanoma)
+library(tidyverse)
+#QQplots
+library(ggplot2)
+#Function to create QQ-plot
+qqplot_function <-function(data,variable,grouping_var,title){
+ggplot(data,aes(simple=!!sym(variable), color=factor(!!sym(grouping_var))))
+geom_qq_line()
+geom_qq()
+labs(title = title,x="Theoratical Quantiles",y="Sample Quantiles")
+theme_minimal()
+}
+#QQ-plot for age grouped by gender
+qqplot_function(melanoma,"age","sex","QQ-Plot for age")
+#QQ-plot for thickness groiped by gender
+qqplot_function(melanoma,"thickness","sex","QQ-Plot for Thickness")
+We can produce separate [plots for smokers and non-smokers
+library(ggplot2)
+ggplot_function<-function(melanoma,variable,grouping_var,title){
+ggplot(melanoma,aes(sample=!!sym(variable),color=factor(!!sym(grouping_var))))
++geom_qq_line()+
+geom_qq()+
+labs(title = title,x="Theoratical Quantiles",y="sample Quantiles")+
+theme_minimal()
+}
+qqplot_function(melanoma,"age","sex","QQ-Plot for Age")
+library(ggplot2)
+ggplot_function<-function(melanoma,variable,grouping_var,title){
+ggplot(melanoma,aes(sample=!!sym(variable),color=factor(!!sym(grouping_var))))
++geom_qq_line()+
+geom_qq()+
+labs(title = title,x="Theoratical Quantiles",y="sample Quantiles")+
+theme_minimal()
+}
+qqplot_function(melanoma,"age","sex","QQ-Plot for Age")
+# QQ plots
+library(ggplot2)
+# Function to create QQ-plot
+qqplot_function <- function(data, variable, grouping_var, title) {
+ggplot(data, aes(sample = !!sym(variable), color = factor(!!sym(grouping_var)))) +
+geom_qq_line() +
+geom_qq() +
+labs(title = title, x = "Theoretical Quantiles", y = "Sample Quantiles") +
+theme_minimal()
+}
+# QQ-plot for age grouped by gender
+qqplot_function(melanoma, "age", "sex", "QQ-Plot for Age")
+# QQ-plot for thickness grouped by gender
+qqplot_function(melanoma, "thickness", "sex", "QQ-Plot for Thickness")
+# QQ-plot for time grouped by gender
+qqplot_function(melanoma, "time", "sex", "QQ-Plot for Time")
+View(melanoma)
+summary(melanoma)
+var(melanoma)
+hist(melanoma$time)
+hist(time)
+#histogram of melanoma with time
+hist(melanoma$time="time")
+hist(melanoma$time)
+hist(melanoma$time,main = "Time")
+hist(melanoma$time,main = "Time",col = "yellow")
+hist(melanoma$status,main = "Status",col = "pink")
+summary(melanoma)
+summaru(melanoma)
+summary(melanoma)
+var(melanoma)
+sd(melanoma$time)
+sd(melanoma$status)
+sd(melanoma$sex)
+sd(melanoma$age)
+sd(melanoma$year)
+sd(melanoma$thickness)
+sd(melanoma$ulcer)
+sd(melanoma$...1)
+hist(melanoma$sex,"main = sex", "col = green")
+hist(melanoma$sex, main = "sex",col = "green")
+hist(melanoma$age, main = "age",col = "blue")
+hist(melanoma$year, main = "year",col = "black")
+hist(melanoma$year, main = "year", col = "yellow" )
+hist(melanoma$time, main = "time", col = "yellow")
+hist(melanoma$thickness, main = "Thickness", col = "pink")
+summary(melanoma)
+var(melanoma)
+library(OneR)
+install.packages(c("cli", "cpp11", "curl", "data.table", "DBI", "digest", "fansi", "glue", "haven", "jsonlite", "processx", "progress", "ragg", "Rcpp", "readr", "reprex", "rlang", "sass", "stringi", "vctrs", "vroom", "xml2", "yaml"))
+library(OneR)
+head(mushrooms)
+summary(mushroom)
+summary(model)
+install.packages("OneR")
+library(OneR)
+melanoma_data <- melanoma_data %>%
+mutate(
+status = factor(status, labels = c("Died from Melanoma", "Still Alive", "Died from Unrelated Causes")),
+sex = factor(sex, labels = c("Female", "Male")),
+ulcer = factor(ulcer, labels = c("Absent", "Present"))
+) %>% select(-1)
+melanoma_data <- melanoma_data
+melanoma_data <- melanoma_data %>%
+mutate(
+status = factor(status, labels = c("Died from Melanoma", "Still Alive", "Died from Unrelated Causes")),
+sex = factor(sex, labels = c("Female", "Male")),
+ulcer = factor(ulcer, labels = c("Absent", "Present"))
+) %>% select(-1)
+melanoma
+summary(melanoma)
+summary(melanoma$time)
+summary(melanoma)
+summary(melanoma)
+> boxplot(melanoma$time ~ melanoma$age)
+boxplot(melanoma$time ~ melanoma$age)
+boxplot(melanoma$age ~ melanoma$year)
+boxplot(melanoma$time ~ melanoma$age ~ melanoma$year ~ melanoma$thickness)
+help(hist)
+par(mfrow=c(2,2))
+par(mfrow=c(2,2))
+hist(melanoma$time, main = "Histogram of time", col = "pink")
+hist(melanoma$age, main = "Histogram of age", col = "pink")
+hist(melanoma$year, main = "Histogram of year", col = "pink")
+hist(melanoma$thickness, main = "Histogram of thickness", col = "pink")
+cor(melanoma)
+summary(my model)
+cor(melanoma)
+LinReg <- lm(time ~ thickness)
+LinReg <- lm(time ~ thickness)
+summary(my_model)
+cor(melanoma)
+summary(my_model)
+attach(melanoma)
+cor(time, melanoma, method="pearson")
+plot(time, melanoma)
+plot(time , thickness, main = "Scatterplot")
+my_model = lm(formula = time~thickness)
+my_model
+summary(my_model)
+cor(melanoma)
+cor(melanoma)
+LinReg <- lm(time ~ thickness)
+abline(LinReg, col = "green", lwd = 2)
+LinReg <- lm(time ~ thickness)
+abline(LinReg, col = "green", lwd = 2)
+LinReg <- lm(time ~ age)
+> abline(LinReg, col = "green", lwd = 2)
+LinReg <- lm(time ~ age)
+abline(LinReg, col = "green", lwd = 2)
+# QQ-plot for age grouped by gender
+qqplot_function(melanoma, "age", "sex", "QQ-Plot for Age")
+# QQ-plot for time grouped by gender
+attach(melanoma)
+attach(melanoma)
+plot(time,thickness, main = "Scatterplot")
+LinReg <- lm(time ~ thickness)
+abline(LinReg, col = "green", lwd = 2)
+plot(time,age, main = "Scatterplot")
+LinReg <- lm(time ~ age)
+abline(LinReg, col = "green", lwd = 2)
+my_model = lm(formula = time~thickness)
+my_model
+LinReg <- lm(time ~ thickness)
+abline(LinReg, col = "green", lwd = 1)
+LinReg <- lm(time ~ age)
+abline(LinReg, col = "green", lwd = -89.25)
+LinReg <- lm(time ~ age)
+abline(LinReg, col = "green")
+plot(time , thickness. main = "Scatterplot")
+plot(time , thickness, main = "Scatterplot")
+plot(time , thickness, main = "Scatterplot")
+LinReg <- lm(time ~ thickness)
+abline(LinReg, col = "green")
+plot(time , age, main = "Scatterplot")
+LinReg <- lm(time ~ age)
+abline(LinReg, col = "green")
+wilcox_test_time &lt;- wilcox.test(time ~ sex, data = melanoma)
+wilcox_test_time &lt;- wilcox.test(time ~ sex, data = melanoma)
+head(melanoma)
+library(tidyverse)
+wilcox_test_time &lt;- wilcox.test(time ~ sex, data = melanoma)
+# Function to create QQ-plot
+library(qqplot2)
+# Function to create QQ-plot
+library(ggplot2)
+> qqplot_function <- function(data, variable, grouping_var, title) {
+# Function to create QQ-plot
+library(ggplot2)
+qqplot_function <- function(data, variable, grouping_var, title) {
++     ggplot(data, aes(sample = !!sym(variable), color = factor(!!sym(grouping_var)))) +
++         geom_qq_line() +
++         geom_qq() +
++         labs(title = title, x = "Theoretical Quantiles", y = "Sample Quantiles") +
++         theme_minimal()
++ }
+# Function to create QQ-plot
+library(ggplot2)
+qqplot_function <- function(data, variable, grouping_var, title) {
+ggplot(data, aes(sample = !!sym(variable), color = factor(!!sym(grouping_var)))) +
+geom_qq_line() +
+geom_qq() +
+labs(title = title, x = "Theoretical Quantiles", y = "Sample Quantiles") +
+theme_minimal()
+}
+# QQ-plot for age grouped by gender
+qqplot_function(melanoma, "age", "sex", "QQ-Plot for Age")
+# QQ-plot for thickness grouped by gender
+#qqplot_function(melanoma, "thickness", "sex", "QQ-Plot for Thickness")
+# QQ-plot for time grouped by gender
+# qqplot_function(melanoma, "time", "sex", "QQ-Plot for Time"
+p_bwt + stat_qq() + stat_qq_line() + facet_grid(. ~ sex)
+p_age + stat_qq() + stat_qq_line() + facet_grid(. ~ sex)
+p_bwt <- ggplot(data = melanoma, aes(sample = sex))
+> p_bwt + stat_qq() + stat_qq_line()
+p_bwt <- ggplot(data = melanoma, aes(sample = sex))
+p_bwt + stat_qq() + stat_qq_line()
+p_bwt + stat_qq() + stat_qq_line() + facet_grid(. ~ age)
+p_bwt + age_qq() + age_qq_line() + facet_grid(. ~ sex)
+p_bwt + age_qq() + age_qq_line() + facet_grid(. ~ sex)
+melanoma <- melanoma %>%
+mutate(race = recode_factor(race, `1` = "male",
+`2` = "female")) %>%
+mutate_at(c("sex", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(race = recode_factor(age, `1` = "male",
+`2` = "female")) %>%
+mutate_at(c("sex", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`2` = "female")) %>%
+mutate_at(c("sex", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at(c("sex", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at(c("sex", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+mutate_at c("sex", "ht", "ui", "low"),
+mutate_at ("sex", "ht", "ui", "low"),
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at c("sex", "ht", "ui", "low") ~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`2` = "female")) %>%
+mutate_at c("sex", "ht", "ui", "low") ~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`2` = "female")) %>%
+mutate_at c("sex", "ht", "ui", "low") ~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`2` = "female")) %>%
+mutate_at c("sex", "ht", "ui", "low") ~ recode_factor(.x, `0` = "no", `1` = "yes"))
+attach(melanoma)
+library(tidyverse)
+plot(thickness,time,col="green")
+my_model=lm(formula = time~thickness)
+summary(my_model)
+LinReg <-lm(time ~ thickness)
+abline(LinReg, col="red",lwd=2)
+LinReg
+Summary(LinReg)
+cor(melanoma$time,melanoma$thickness,use="complete.obs")
+plot(age,time,col="red")
+my_model=lm(formula = time ~ age)
+summary(my_model)
+LinReg <-lm(time ~ age)
+abline(LinReg,col="green",lwd=2)
+LinReg
+summary(LinReg)
+cor(melanoma$time,melanoma$age,use="complete.obs")
+plot(age,thickness,col="red")
+my_model=lm(formula = thickness ~ age)
+abline(LinReg, col="green",lwd=2)
+abline(LinReg,col= "blur" lwd= 2)
+abline(LinReg, col= "blue", lwd= 2)
+LinReg
+summary(LinReg)
+cor(melanoma$thickness,melanoma$age)
+plot(age,thickness,col="red")
+my_model=lm(formula = thickness ~ age)
+summary(my_model)
+LinReg <-lm(thickness ~ age)
+abline(LinReg, col="green", lwd=2)
+LinReg
+summary(LinReg)
+cor(melanoma$thickness,melanoma$age,use = "complete.obs")
+attach(melanoma)
+library(tidyverse)
+plot(thickness,time,col="green")
+plot(thickness,time,main="Scatterplot", col="black")
+plot(thickness,time,main="Scatterplot for time and thickness",col="black")
+LinReg <-lm(time ~ thickness)
+abline(LinReg, col="pink",lwd=2)
+LinReg
+summary(LinReg)
+plot(age,time, main="Scatterplot for time and age", col="black")
+LinReg <-lm(time ~ age)
+abline(LinReg, col="pink",lwd=2)
+LinReg
+summary(LinReg)
+plot(thickness,age, main="Scatterplot for thickness and age", col="black")
+LinReg <-lm(time ~ age)
+LinReg <-lm(thickness ~ age)
+LinReg
+summary(LinReg)
+abline(LinReg, col="pink", lwd=2)
+abline(LinReg, col= "pink", lwd= 2)
+plot(thickness,age, main="Scatterplot for thickness and age", col="black")
+LinReg <-lm(thickness ~ age)
+abline(LinReg, col= "pink", lwd= 2)
+# Function to create QQ-plot
+qqplot_function <- function(data, variable, grouping_var, title) {
+ggplot(data, aes(sample = !!sym(variable), color = factor(!!sym(grouping_var)))) +
+geom_qq_line() +
+geom_qq() +
+labs(title = title, x = "Theoretical Quantiles", y = "Sample Quantiles") +
+theme_minimal()
+}
+library(ggplot2)
+# Function to create QQ-plot
+qqplot_function <- function(data, variable, grouping_var, title) {
+ggplot(data, aes(sample = !!sym(variable), color = factor(!!sym(grouping_var)))) +
+geom_qq_line() +
+geom_qq() +
+labs(title = title, x = "Theoretical Quantiles", y = "Sample Quantiles") +
+theme_minimal()
+QQ-plot for age grouped by gender
+QQ-plot for age grouped by gender
+QQ-plot for age grouped by gender
+#QQ-plot for age grouped by gender
+qqplot_function(melanoma, "age", "sex", "QQ-Plot for Age")
+# QQ-plot for thickness grouped by gende
+qqplot_function(melanoma, "thickness", "sex", "QQ-Plot for Thickness")
+# QQ-plot for time grouped by gender
+qqplot_function(melanoma, "time", "sex", "QQ-Plot for Time"
+head(melanoma)
+head(melanoma)
+melanoma <- melanoma %>%
+mutate(race = recode_factor(race, `1` = "white",
+`2` = "black", `3` = "other")) %>%
+mutate_at(c("smoke", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(sex = recode_factor(sex, `1` = "white",
+`2` = "black", `3` = "other")) %>%
+mutate_at(c("smoke", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(sex = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at(c("smoke", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(sex = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at(c("time", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(sex = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+p_time + stat_qq() + stat_qq_line() + facet_grid(. ~ sex)
+p_bwt + time_qq() + time_qq_line() + facet_grid(. ~ sex)
+p_bwt + stat_qq() + stat_qq_line() + sex_grid(. ~ time)
+p_melanoma + stat_qq() + stat_qq_line() + sex_grid(. ~ time)
+library(ggplot2)
+melanoma <- melanoma %>%
+mutate(sex = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at(c("time", "ht", "ui", "low"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(sex = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+p_bwt + stat_qq() + stat_qq_line() + facet_grid(. ~ sex)
+p_melanoma + stat_qq() + stat_qq_line() + facet_grid(. ~ sex)
+p_(melanoma) + statt_qq() + sat_qq_line() + facet_grid(. ~ sex)
+p_bwt + stat_qq() + stat_qq_line() + facet_grid(. ~ smoke)
+plot for time + stat_qq() + stat_qq_line() + facet_grid(. ~ sex)
+p_sex <- ggplot(data = melanoma, aes(sample = sex))
+p_sex + stat_qq() + stat_qq_line()
+p_sex + stat_qq() + stat_qq_line() + facet_grid(. ~ time)
+p_sex + stat_qq() + stat_qq_line() + facet_grid(. ~ sex)
+# Create QQ-plots for each variable and gender
+qq_plots <- list(
+time_gender_0 = create_qq_plot(data, "time", 0),
+time_gender_1 = create_qq_plot(data, "time", 1),
+thickness_gender_0 = create_qq_plot(data, "thickness", 0),
+thickness_gender_1 = create_qq_plot(data, "thickness", 1),
+age_gender_0 = create_qq_plot(data, "age", 0),
+age_gender_1 = create_qq_plot(data, "age", 1)
+)
+qq_plots <- list(
+time_gender_0 = create_qq_plot(data, "time"= 0),
+time_gender_1 = create_qq_plot(data, "time"= 1),
+thickness_gender_0 = create_qq_plot(data, "thickness" 0),
+qq_plots <- list(
+time_gender_0 = create_qq_plot(data, "time"= 0),
+time_gender_1 = create_qq_plot(data, "time"= 1),
+thickness_gender_0 = create_qq_plot(data, "thickness" 0),
+qq_plots <- list(
+time_gender_0 = create_qq_plot(data, time= `0`)
+Display the plots
+library(qqplot2)
+library(ggplot2)
+# Create QQ-plots for each variable and gender
+qq_plots <- list(
+time_gender_0 = create_qq_plot(melanoma, time= `0`),
+time_gender_1 = create_qq_plot(melanoma, time= `1`),
+thickness_gender_0 = create_qq_plot(melanoma, `thickness=`0`),
+library(tidyverse)
+melanoma <- as_tibble(MASS::melanoma)
+head(melanoma)
+melanoma <- melanoma %>%
+mutate(race = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at(c("sex", "time", "age", "thickness"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+melanoma <- melanoma %>%
+mutate(sex = recode_factor(sex, `1` = "male",
+`0` = "female")) %>%
+mutate_at(c("sex", "time", "age", "thickness"),
+~ recode_factor(.x, `0` = "no", `1` = "yes"))
+head(melanoma)
+qplot(x = sex, y = time,
+geom = "boxplot", data = melanoma,
+xlab = "male and female",
+ylab = "melanoma (days)",
+fill = I("pink"))
+yes <- filter(melanoma, sex=='yes')
+mean(yes$time)
+"C:/Users/data.csv/Downloads/"
+summary(data.csv)
+summary(data.csv)
+summary(data)
+summary("data.csv")
+library(readr)
+dataset <- read_csv(NULL)
+library(readr)
+dataset <- read_csv(NULL)
+load("C:/Users/HP/Downloads/data.csv")
